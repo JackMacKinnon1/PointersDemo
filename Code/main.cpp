@@ -70,6 +70,18 @@ int main() {
 
 
 
+    //undefined behavior
+
+    int i = 3;
+    int *pn = &i;
+    cout << *pn << endl; //before null //output: 3
+    //pn = NULL;
+    cout << pn << endl; //output: 0
+    cout << *pn << endl; //after null // output: error
+
+
+
+
 
 
 
